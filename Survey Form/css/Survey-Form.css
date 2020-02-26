@@ -1,0 +1,99 @@
+body {
+	background-color: #a9d7d1;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {text-align: center;}
+
+
+#container {
+	background-color: #FAFAFA;
+	width: 76%;
+	margin: 0 auto; 
+	padding: 10px 0;
+	border-radius: 0.5%;
+}
+
+#survey-form {
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+}
+
+.rowTab {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.left {
+	width: 50%;
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 20px;
+}
+
+.right {
+	width: 50%;
+	margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+	#container {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1000px){
+	#container {
+		width: 920px;
+	}
+}
+
+#name, #email, #number {
+	width: 250px;
+	height: 25px;
+}
+
+.radio-btn {margin: 10px 0;}
+
+#dropdown, #dropdown2 {height: 35px;}
+
+[type="checkbox"] {	margin-bottom: 10px;}
+
+textarea {width: 250px;}
+
+button {
+	background-color: #59ACE2;
+	color: white;
+	font-size: 16px;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 6%;
+	box-shadow: 0 0 0 0;
+	width: 100px;
+	border-style: none;
+	cursor: pointer;
+}
+
+@media (max-width: 775px){
+	.rowTab {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	.left {
+		text-align: left;
+	}
+	#name, #email, #number{
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+	}
+	#description {
+		text-align: center;
+	}
+}
+

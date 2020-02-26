@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/Survey-Form.css">
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+	</header>
+	<div id="container">
+		<div class="rowTab">
+			<p id="description">Let us know how we can improve freeCodeCamp </p>
+		</div>
+		<form action="/action_page.php" id="survey-form">
+			<div class="rowTab">
+				<div class="left">
+					<label id="name-label"><sup>*</sup> Name: </label>	
+				</div>
+				<div class="right">
+					<input type="text" placeholder="Enter your name" id="name" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					<label id="email-label"><sup>*</sup> Email: </label>
+				</div>
+				<div class="right">
+					<input type="email" placeholder="Enter your Email" id="email" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					<label id="number-label"><sup>*</sup> Age: </label>	
+				</div>
+				<div class="right">
+					<input type="number" placeholder="Age" id="number" min="1" max="125" >
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					Which option best describes your current role?
+				</div>
+				<div class="right">
+					<select id="dropdown">
+						<option value="Select an option" disabled>Select an option</option>
+						<option value="Student">Student</option>
+						<option value="Full Time Job">Full Time Job</option>
+						<option value="Full Time Learner">Full Time Learner</option>
+						<option value="Prefer not to say">Prefer not to say</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					<p><sup>*</sup> How likely is that you would recommend <br>freeCodeCamp to a friend?</p>
+				</div>
+				<div class="right">
+					<label><input type="radio" name="recommendation" value="rcmnd" class="radio-btn"> Definitely</label><br>
+					<label><input type="radio" name="recommendation" value="rcmnd" class="radio-btn"> Maybe</label><br>
+					<label><input type="radio" name="recommendation" value="rcmnd" class="radio-btn"> Not sure</label><br>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					What do you like most in FCC:
+				</div>
+				<div class="right">
+					<select id="dropdown2">
+						<option value="Select an option" disabled selected>Select an option</option>
+						<option value="Challenges">Challenges</option>
+						<option value="Projects">Projects</option>
+						<option value="Community">Community</option>	
+						<option value="Open-source">Open source</option>		
+					</select><br>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					Things that should be improved in the future<br>
+					(Check all that apply):
+				</div>
+				<div class="right">
+					<div class="checkbox">
+						<label><input type="checkbox" value="what-to-improve"> Front-end Projects</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Back-end Projects</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Data Visualization</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Challenges</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Open Source Community</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Gitter help rooms</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Videos</label><br>
+						<label><input type="checkbox" value="what-to-improve"> City Meetups</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Wiki</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Forum</label><br>
+						<label><input type="checkbox" value="what-to-improve"> Additional Courses</label><br>
+					</div>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="left">
+					Any Comments or Suggestions?
+				</div>
+				<div class="right">
+					<textarea placeholder="Enter your comment here..."></textarea>
+				</div>
+			</div>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
+
