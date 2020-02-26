@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #393c3f;
+}
+
+header {
+	background: #8b47a7;
+	padding: 20px;
+}
+
+header > h1 {
+	color: #1f2127;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.score-board {
+	border: 3px solid white;
+	border-radius: 4px;
+	width: 200px;
+	margin: 20px auto;
+	color: white;
+	font-size: 48px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.badge {
+	background-color: #8b47a7;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 2px 10px;
+}
+
+#player-label {
+	position: absolute;
+	top: 32px;
+	left: -35px;
+}
+
+#computer-label {
+	position: absolute;
+	top: 32px;
+	right: -30px;
+}
+
+.result {
+	font-size: 40px;
+	color: white;
+}
+
+.result p {
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+.choices {
+	text-align: center;
+	margin: 40px 40px 10px 40px;
+}
+
+.choice {
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 10px 25px;
+	transition: all 0.3s ease; 
+}
+
+.choice:hover {
+	cursor: pointer;
+	background: #8b47a7;
+}
+
+.hands:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+
+#action-message {
+	font-size: 20px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+#reset {
+	background: #8b47a7;
+	border: 2px solid black;
+	border-radius: 50%; 
+	padding: 25px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+#reset:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.3s;
+	color: white;
+}
+
+.green-glow {
+	border: 5px solid green;
+	box-shadow: 0 0 10px green; 
+}
+
+.red-glow {
+	border: 5px solid red;
+	box-shadow: 0 0 10px red;
+}
+
+.gray-glow {
+	border: 5px solid #464647;
+	box-shadow: 0 0 10px #464647;
+}
