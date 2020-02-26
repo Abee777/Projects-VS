@@ -1,0 +1,105 @@
+body {
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
+
+#navbar {
+	position: fixed;
+	min-width: 290px;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;     
+	border-right: solid;
+	border-color: rgba(0,22,22,0.4);
+}
+
+#navbar header {
+	margin: 10px;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 88%;
+}
+
+nav li {
+	padding: 8px;
+	padding-left: 45px;
+	border-top: 1px solid;
+	position: relative;
+	left: -50px;
+	width: 100%;
+}
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
+main {
+	padding: 20px;
+	margin-left: 310px;
+}
+
+header {
+	font-size: 1.8em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+}
+
+section {
+	color: #4d4e53;
+	font-size: 0.96em;
+}
+
+article { 
+	line-height: 1.5;
+	margin: 15px;
+}
+
+section li {
+	margin: 15px 0px 0px 20px;
+}
+
+code {
+	display: block;
+	text-align: left;
+	white-space: pre;
+	position: relative;
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 15px;
+	margin: 10px;
+	word-break: normal;
+	word-wrap: normal;
+}
+
+
+@media (max-width: 815px) {
+	#navbar {
+		position: absolute;
+		width: 100%;
+		max-height: 275px;
+		top: 0;
+		border-bottom: 2px solid;
+	}
+
+	main {
+		margin-left: 0;
+		margin-top: 270px;
+		position: relative;
+	}
+
+	#navbar ul {
+		height: 207px;
+		border-top: 2px solid;    /* nisam siguran da ovako treba (ili da ovde treba) tj. da je iskopirano 100%,
+									 jer mi se cini da prelazi border od 
+									2px preko overflow-y za nav ul */ 
+	}
+
+} 
