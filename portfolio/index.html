@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><span>Salatić</span></h1>
+            <div id="icon"><div id="yin-yang"></div></div>
+            <nav>   
+                <div class="topnav">
+                    <ul id="myLinks">
+                        <li><a href="#welcome-section">About</a></li>
+                        <li class="dropdown"><a href="#projects" class="dropdwn">Work</a>
+                            <div class="dropdown-content">
+                                <a href="#projects">All Projects</a>
+                                <a href="#projects">HTML CSS</a>
+                                <a href="#projects">JS</a>
+                                <a href="#projects">PHP</a>
+                            </div>
+                        </li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>   
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="welcome-section">
+        <div class="container">
+            <h1>Hey I am Vladimir</h1> 
+			<h3 style="color: #BE3144"><em> a web developer </em></h3>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h1>PROJECTS GALLERY</h1>
+            <h3 id="heading">All Projects</h3>
+            <ul id="gallery">
+                <li class="html-css"><a href="img/Tribute.jpg" onclick="window.open('..//tribute_page/index.html');" target="_blank" data-title="Tribute Page" data-lightbox="projects" data-desc="Basic HTML&CSS"><img src="img/Tribute.jpg"></a></li>
+                <li class="html-css"><a href="img/TechDoc.jpg" onclick="window.open('..//technical_documentation_page/index.html');" target="_blank" data-lightbox="projects" data-title="Technical Documentation Page" data-desc="Basic HTML&CSS"><img src="img/TechDoc.jpg"></a></li>
+                <li class="html-css"><a href="img/Survey.jpg" onclick="window.open('..//survey_form/index.html');" target="_blank" data-lightbox="projects" data-title="Survey Form" data-desc="Basic HTML&CSS"><img src="img/Survey.jpg"></a></li>
+                <li class="html-css"><a href="img/ProductLanding.jpg" onclick="window.open('..//product_landing_page/index.html');" target="_blank" data-lightbox="projects" data-title="Product Landing Page" data-desc="Basic HTML&CSS"><img src="img/ProductLanding.jpg"></a></li>
+
+                <li class="js"><a href="img/IksOks.jpg" onclick="window.open('..//iks-oks_game/index.html');" target="_blank" data-lightbox="projects" data-title="Iks-Oks Game" data-desc="jQuery"><img src="img/IksOks.jpg"></a></li>
+                <li class="js"><a href="img/RPS.jpg" onclick="window.open('..//rock_paper_scissors_game/index.html');" target="_blank" data-lightbox="projects" data-title="Rock Paper Scissors Game" data-desc="JavaScript"><img src="img/RPS.jpg"></a></li> 
+                <li class="js"><a href="img/SimpleQuiz.jpg" onclick="window.open('..//martial_arts_quiz/index.html');" target="_blank" data-lightbox="projects" data-title="Martial Arts Quiz" data-desc="jQuery"><img src="img/SimpleQuiz.jpg"></a></li>     
+                <li class="js"><a href="img/Zen.jpg" onclick="window.open('..//jquery_zen_accordion/idex.html');" target="_blank" data-lightbox="projects" data-title="jQuery Zen Slider" data-desc="jQuery"><img src="img/Zen.jpg"></a></li>     
+                <li class="html-css js"><a href="img/jQuery-slider.jpg" onclick="window.open('..//jquery_slider/index.html');" target="_blank" data-lightbox="projects" data-title="jQuery Slider" data-desc="jQuery"><img src="img/jQuery-slider.jpg"></a></li>   
+                <li class="html-css js"><a href="img/FindVid.jpg" onclick="window.open('..//youtube_api/index.html');" target="_blank" data-lightbox="projects" data-title="YT API" data-desc="jQuery"><img src="img/FindVid.jpg"></a></li> 
+                <li class="js"><a href="img/AppleSlider.jpg" onclick="window.open('..//apple_slider/index.html');" target="_blank" data-lightbox="projects" data-title="Apple Slider" data-desc="jQuery"><img src="img/AppleSlider.jpg"></a></li>   
+
+                <li class="php"><a href="img/Shoutbox.jpg" onclick="window.open('..//ajaxPHPshoutbox/index.php');" target="_blank" data-lightbox="projects" data-title="Shoutbox" data-desc="PHP"><img src="img/Shoutbox.jpg"></a></li>  
+                <li class="php"><a href="img/Blog.jpg" onclick="window.open('..//php_blog/index.php');" target="_blank" data-lightbox="projects" data-title="Simple Blog" data-desc="PHP"><img src="img/Blog.jpg"></a></li>  
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h1>CONTACT</h1>
+            <div class="cont2">
+                <h3>Let's work together</h3>
+                <svg height="230" width="450">
+                    <line x1="25" y1="70" x2="100" y2="30" style="stroke:#BE3144;stroke-width:2"/>
+                    <text x="105" y="30" fill="white" class="textlbl">email</text>
+                    <text x="152" y="30" fill="#BE3144" class="textcnt">- vrsalatic@gmail.com</text>
+                    <line x1="30" y1="85" x2="80" y2="85" style="stroke:#BE3144;stroke-width:2"/>
+                    <text x="90" y="90" fill="white" class="textlbl">Mobile</text>
+                    <text x="147" y="90" fill="#BE3144" class="textcnt">- (+381)652832194</text>
+                    <line x1="25" y1="100" x2="85" y2="150" style="stroke:#BE3144;stroke-width:2"/>
+                    <text x="70" y="170" fill="white" class="textlbl">GitHub</text>
+                    <text x="130" y="170" fill="#BE3144" class="textcnt">- github.com/Abee777</text>
+                    <line x1="15" y1="110" x2="25" y2="200" style="stroke:#BE3144;stroke-width:2"/>
+                    <text x="0" y="220" fill="white" class="textlbl">LinkedIn</text>
+                    <text x="72" y="220" fill="#BE3144" class="textcnt">- linkedin.com/in/vladimir-salatic</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2020, All Rights Reserved</p> 
+    </footer>
+    <script
+			src="https://code.jquery.com/jquery-1.12.4.js"
+			integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
