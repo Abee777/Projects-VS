@@ -66,9 +66,13 @@ $(document).ready(function(){
         $('.textlbl').toggle(400);
         $('.textcnt').hide(400);
     });
+    $('.cont2 h3').one("click", function(){
+        $('svg line').slideToggle(400);
+        $('.textlbl').slideToggle(400);
+    });
     $('.textlbl').click(function(){
         $(this).next('.textcnt:first').toggle();
-    })
+    });
     // Menu yin-yang icon
     $('#yin-yang').on('click', function(){
         if ($(window).width() <= 390){
